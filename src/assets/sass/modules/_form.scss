@@ -1,0 +1,189 @@
+.distribution_profile {
+	font: 14px $arials;
+	color: $grey;
+	h2 {
+		text-align: left;
+		margin: 0;
+		color: $grey;
+		font-weight: normal;
+	}
+	select {
+		color: $grey;
+		border: 1px solid $grey;
+		padding: 6px 0;
+	}
+	input[type="text"]{
+		border: 1px solid $grey;
+		min-height: 29px;
+		padding: 0 5px;
+		@include placeholder {
+			color: $grey;
+		}
+	}
+	.heading {
+		@include clearfix;
+		padding: 10px 0;
+		border-bottom: 1px solid $grey;
+		margin: 10px 0;
+		h2 {
+			float: left;
+		}
+		.toggle {
+			display: block;
+			width: 16px;
+			height: 16px;
+			float: right;
+			background: $blue;
+			box-shadow: none;
+			border: none;
+			@include box-shadow(inset, 0, 0, 0, 0);
+			padding: 0;
+			border-radius: 50%;
+			cursor: pointer;
+			margin-top: 3px;
+			&:after {
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				@include triangle(8px, white, down);
+				@include box-shadow(inset, 0, 0, 0, 0);
+				padding: 0;
+				position: relative;
+    			top: -1px;
+			}
+			&:hover {
+				background: lighten($blue, 10%)
+			}
+		}
+	}
+}
+.form_group {
+	padding: 5px 0;
+	width: 100%;
+	text-align: left;
+	label {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 15px 0 0;
+	}
+	input[type="text"], input[type="checkbox"] {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+.submit_btns {
+	text-align: right;
+	.form_group {
+		display: inline-block;
+		text-align: right;
+	}
+}
+.save_btn {
+	background: $blue;
+	border-radius: 4px;
+	border: none;
+	padding: 6px 20px;
+	color: $white;
+	text-transform: uppercase;
+	margin: 5px;
+	cursor: pointer;
+	&:hover {
+		background: lighten($blue, 5%)
+	}
+}
+.cancel_btn {
+	background: $light-grey;
+	border-radius: 4px;
+	border: none;
+	padding: 6px 20px;
+	color: $blue;
+	margin: 5px;
+	cursor: pointer;
+	&:hover {
+		background: lighten($light-grey, 2%)
+	}
+}
+.details, .filters {
+	label {
+		width: 15%;
+		text-align: left;
+	}
+	select{
+		width: 80%;
+		padding: 5px;
+	}
+	input[type="text"] {
+		width: 80%;
+		padding: 0 5px;
+		border: none;
+	}
+}
+.submittedtimerange {
+	.toggle_content {
+		@include clearfix;
+	}
+	label {
+		display: block;
+		padding-bottom: 5px;
+	}
+	.form_group {
+		float: left;
+		width: 20%;
+		margin-right: 5%;
+	}
+	span {
+		display: inline-block;
+		float: left;
+		padding: 5px;
+	}
+	input {
+		width: 100%;
+	}
+	.criteria {
+		width: 15%;
+		input {
+			width: 100%;
+		}
+	}
+	.time_zone {
+		width: 15%;
+	}
+}
+.time {
+	&.form_group  {
+		margin-right: 0;
+	}
+	input[type="text"] {
+		display: block;
+		padding: 0 5px;
+		max-width: 30px;
+		float: left;
+		text-align: center;
+		&:first-of-type {
+			border-right: none;
+		}
+	}
+	select {
+		max-width: 50px;
+		float: left;
+		padding: 6px 0;
+		margin-left: 5px;
+	}
+	&.before_criteria {
+		display: none;
+		width: 25%;
+		margin-right: 0;
+		input[type="text"] {
+			&:first-of-type {
+				border: 1px solid $grey;
+			}
+		}
+	}
+}
+.dayofweek {
+	padding-bottom: 15px;
+	.toggle_content {
+		border-bottom: 1px solid $grey;
+		padding-bottom: 10px;
+	}
+}

@@ -1,0 +1,192 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center; }
+
+button:focus {
+  outline: none; }
+
+.distribution_profile {
+  font: 14px Arial, sans-serif;
+  color: #737472; }
+  .distribution_profile h2 {
+    text-align: left;
+    margin: 0;
+    color: #737472;
+    font-weight: normal; }
+  .distribution_profile select {
+    color: #737472;
+    border: 1px solid #737472;
+    padding: 6px 0; }
+  .distribution_profile input[type="text"] {
+    border: 1px solid #737472;
+    min-height: 29px;
+    padding: 0 5px; }
+    .distribution_profile input[type="text"]::-webkit-input-placeholder {
+      color: #737472; }
+    .distribution_profile input[type="text"]:-moz-placeholder {
+      color: #737472; }
+    .distribution_profile input[type="text"]::-moz-placeholder {
+      color: #737472; }
+    .distribution_profile input[type="text"]:-ms-input-placeholder {
+      color: #737472; }
+  .distribution_profile .heading {
+    padding: 10px 0;
+    border-bottom: 1px solid #737472;
+    margin: 10px 0; }
+    .distribution_profile .heading::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .distribution_profile .heading h2 {
+      float: left; }
+    .distribution_profile .heading .toggle {
+      display: block;
+      width: 16px;
+      height: 16px;
+      float: right;
+      background: #4e82c1;
+      box-shadow: none;
+      border: none;
+      -webkit-box-shadow: inset 0 0 0 0;
+      -moz-box-shadow: inset 0 0 0 0;
+      box-shadow: inset 0 0 0 0;
+      padding: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-top: 3px; }
+      .distribution_profile .heading .toggle:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 0;
+        width: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid white;
+        -webkit-box-shadow: inset 0 0 0 0;
+        -moz-box-shadow: inset 0 0 0 0;
+        box-shadow: inset 0 0 0 0;
+        padding: 0;
+        position: relative;
+        top: -1px; }
+      .distribution_profile .heading .toggle:hover {
+        background: #749dce; }
+
+.form_group {
+  padding: 5px 0;
+  width: 100%;
+  text-align: left; }
+  .form_group label {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px 0 0; }
+  .form_group input[type="text"], .form_group input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle; }
+
+.submit_btns {
+  text-align: right; }
+  .submit_btns .form_group {
+    display: inline-block;
+    text-align: right; }
+
+.save_btn {
+  background: #4e82c1;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 5px;
+  cursor: pointer; }
+  .save_btn:hover {
+    background: #618fc8; }
+
+.cancel_btn {
+  background: #ecedec;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 20px;
+  color: #4e82c1;
+  margin: 5px;
+  cursor: pointer; }
+  .cancel_btn:hover {
+    background: #f1f2f1; }
+
+.details label, .filters label {
+  width: 15%;
+  text-align: left; }
+
+.details select, .filters select {
+  width: 80%;
+  padding: 5px; }
+
+.details input[type="text"], .filters input[type="text"] {
+  width: 80%;
+  padding: 0 5px;
+  border: none; }
+
+.submittedtimerange .toggle_content::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.submittedtimerange label {
+  display: block;
+  padding-bottom: 5px; }
+
+.submittedtimerange .form_group {
+  float: left;
+  width: 20%;
+  margin-right: 5%; }
+
+.submittedtimerange span {
+  display: inline-block;
+  float: left;
+  padding: 5px; }
+
+.submittedtimerange input {
+  width: 100%; }
+
+.submittedtimerange .criteria {
+  width: 15%; }
+  .submittedtimerange .criteria input {
+    width: 100%; }
+
+.submittedtimerange .time_zone {
+  width: 15%; }
+
+.time.form_group {
+  margin-right: 0; }
+
+.time input[type="text"] {
+  display: block;
+  padding: 0 5px;
+  max-width: 30px;
+  float: left;
+  text-align: center; }
+  .time input[type="text"]:first-of-type {
+    border-right: none; }
+
+.time select {
+  max-width: 50px;
+  float: left;
+  padding: 6px 0;
+  margin-left: 5px; }
+
+.time.before_criteria {
+  display: none;
+  width: 25%;
+  margin-right: 0; }
+  .time.before_criteria input[type="text"]:first-of-type {
+    border: 1px solid #737472; }
+
+.dayofweek {
+  padding-bottom: 15px; }
+  .dayofweek .toggle_content {
+    border-bottom: 1px solid #737472;
+    padding-bottom: 10px; }
+
+/*# sourceMappingURL=maps/style.css.map */
