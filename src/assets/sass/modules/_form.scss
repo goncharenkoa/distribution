@@ -6,6 +6,7 @@
 		margin: 0;
 		color: $grey;
 		font-weight: normal;
+		font-size: 14px;
 	}
 	select {
 		color: $grey;
@@ -50,9 +51,6 @@
 				padding: 0;
 				position: relative;
     			top: -1px;
-			}
-			&:hover {
-				background: lighten($blue, 10%)
 			}
 		}
 	}
@@ -118,6 +116,10 @@
 		border: none;
 	}
 }
+.time_wrapper {
+	width: 75%;
+	float: left;
+}
 .submittedtimerange {
 	.toggle_content {
 		@include clearfix;
@@ -128,7 +130,7 @@
 	}
 	.form_group {
 		float: left;
-		width: 20%;
+		width: 25%;
 		margin-right: 5%;
 	}
 	span {
@@ -140,16 +142,17 @@
 		width: 100%;
 	}
 	.criteria {
-		width: 15%;
-		input {
+		width: 20%;
+		float: left;
+		select {
 			width: 100%;
 		}
 	}
-	.time_zone {
-		width: 15%;
-	}
 }
 .time {
+	width: 30%;
+	float: left;
+	padding: 5px 0;
 	&.form_group  {
 		margin-right: 0;
 	}
@@ -170,8 +173,7 @@
 		margin-left: 5px;
 	}
 	&.before_criteria {
-		display: none;
-		width: 25%;
+		width: 100%;
 		margin-right: 0;
 		input[type="text"] {
 			&:first-of-type {
@@ -179,6 +181,10 @@
 			}
 		}
 	}
+}
+.time_zone {
+	width: 50%;
+	float: left;
 }
 .dayofweek {
 	padding-bottom: 15px;

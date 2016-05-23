@@ -13,7 +13,7 @@
   				<div id="details" class="details">
   					<div class="form_group">
   						<label for="">Name:</label>
-  						<input type="text" placeholder="Profile 1">
+  						<span>Profile 1</span>
   					</div>
   					<div class="form_group">
   						<label for="">Type:</label>
@@ -127,39 +127,58 @@
   					<div id="submitted_timerange" class="toggle_content">
   						<div class="form_group criteria">
 	  						<label for="">Criteria</label>
-	  						<input type="text" value="" placeholder="After">
-	  					</div>
-	  					<div class="form_group time">
-	  						<label for="">Time</label>
-	  						<input type="text" value="" placeholder="10">
-	  						<input type="text" value="" placeholder="00">
 	  						<select name="" id="">
-	  							<option value="">AM</option>
-	  							<option value="">PM</option>
-	  						</select>
+                  <option value="">After</option> 
+                  <option value="">Before</option>      
+                </select>
 	  					</div>
-	  					<div class="form_group time before_criteria">
-	  						<label for="">Time</label>
-	  						<div class="form-group">
-	  							<input type="text" value="" placeholder="10">
-	  						</div>
-	  						<span>and</span>
-	  						<div class="form-group">
-	  							<input type="text" value="" placeholder="00">
-	  						</div>
-	  						<select name="" id="">
-	  							<option value="">AM</option>
-	  							<option value="">PM</option>
-	  						</select>
-	  					</div>
-	  					<div class="form_group time_zone">
-	  						<label for="">Time zone</label>
-	  						<select name="" id="">
-	  							<option value="">CST</option>
-	  						</select>
-	  					</div>
-  					</div>
-  				</div><!-- submittedtimerange -->
+
+	  					<div class="time_wrapper">
+                <div class="form_group time">
+                  <label for="">Time</label>
+                  <select name="" id="">
+                    <option value="">10</option>                  
+                  </select>
+                  <select name="" id="">
+                    <option value="">00</option>       
+                  </select>
+                  <select>
+                    <option value="">AM</option>
+                    <option value="">PM</option>
+                  </select>
+                </div>
+                <div class="form_group time_zone">
+                  <label for="">Time zone</label>
+                  <select name="" id="">
+                      <option value="">CST</option>
+                  </select>
+                </div>
+
+                <div class="form_group time before_criteria">
+                  <div class="form-group time">
+                    <label for="">Time</label>
+                    <select name="" id="">
+                      <option value="">10</option>        
+                    </select>
+                    <span>and</span>
+                    <select name="" id="">
+                      <option value="">00</option>        
+                    </select>
+                    <select name="" id="">
+                      <option value="">AM</option>
+                      <option value="">PM</option>
+                    </select>
+                  </div>
+                  <div class="form_group time_zone">
+                    <label for="">Time zone</label>
+                    <select name="" id="">
+                      <option value="">CST</option>
+                    </select>
+                  </div>
+                 </div>
+              </div>
+            </div><!-- submittedtimerange -->      
+              </div>
 
   				<div id="dayofweek" class="dayofweek">
   					<div class="heading">

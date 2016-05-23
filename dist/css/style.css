@@ -14,7 +14,8 @@ button:focus {
     text-align: left;
     margin: 0;
     color: #737472;
-    font-weight: normal; }
+    font-weight: normal;
+    font-size: 14px; }
   .distribution_profile select {
     color: #737472;
     border: 1px solid #737472;
@@ -71,8 +72,6 @@ button:focus {
         padding: 0;
         position: relative;
         top: -1px; }
-      .distribution_profile .heading .toggle:hover {
-        background: #749dce; }
 
 .form_group {
   padding: 5px 0;
@@ -128,6 +127,10 @@ button:focus {
   padding: 0 5px;
   border: none; }
 
+.time_wrapper {
+  width: 75%;
+  float: left; }
+
 .submittedtimerange .toggle_content::after {
   clear: both;
   content: "";
@@ -139,7 +142,7 @@ button:focus {
 
 .submittedtimerange .form_group {
   float: left;
-  width: 20%;
+  width: 25%;
   margin-right: 5%; }
 
 .submittedtimerange span {
@@ -151,37 +154,39 @@ button:focus {
   width: 100%; }
 
 .submittedtimerange .criteria {
-  width: 15%; }
-  .submittedtimerange .criteria input {
+  width: 20%;
+  float: left; }
+  .submittedtimerange .criteria select {
     width: 100%; }
 
-.submittedtimerange .time_zone {
-  width: 15%; }
-
-.time.form_group {
-  margin-right: 0; }
-
-.time input[type="text"] {
-  display: block;
-  padding: 0 5px;
-  max-width: 30px;
+.time {
+  width: 30%;
   float: left;
-  text-align: center; }
-  .time input[type="text"]:first-of-type {
-    border-right: none; }
+  padding: 5px 0; }
+  .time.form_group {
+    margin-right: 0; }
+  .time input[type="text"] {
+    display: block;
+    padding: 0 5px;
+    max-width: 30px;
+    float: left;
+    text-align: center; }
+    .time input[type="text"]:first-of-type {
+      border-right: none; }
+  .time select {
+    max-width: 50px;
+    float: left;
+    padding: 6px 0;
+    margin-left: 5px; }
+  .time.before_criteria {
+    width: 100%;
+    margin-right: 0; }
+    .time.before_criteria input[type="text"]:first-of-type {
+      border: 1px solid #737472; }
 
-.time select {
-  max-width: 50px;
-  float: left;
-  padding: 6px 0;
-  margin-left: 5px; }
-
-.time.before_criteria {
-  display: none;
-  width: 25%;
-  margin-right: 0; }
-  .time.before_criteria input[type="text"]:first-of-type {
-    border: 1px solid #737472; }
+.time_zone {
+  width: 50%;
+  float: left; }
 
 .dayofweek {
   padding-bottom: 15px; }
