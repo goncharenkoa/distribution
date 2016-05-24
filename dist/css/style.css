@@ -142,8 +142,11 @@ button:focus {
 
 .submittedtimerange .form_group {
   float: left;
-  width: 25%;
+  width: 45%;
   margin-right: 5%; }
+  @media screen and (min-width: 900px) {
+    .submittedtimerange .form_group {
+      width: 25%; } }
 
 .submittedtimerange span {
   display: inline-block;
@@ -160,9 +163,12 @@ button:focus {
     width: 100%; }
 
 .time {
-  width: 30%;
+  width: 50%;
   float: left;
   padding: 5px 0; }
+  @media screen and (min-width: 900px) {
+    .time {
+      width: 30%; } }
   .time.form_group {
     margin-right: 0; }
   .time input[type="text"] {
